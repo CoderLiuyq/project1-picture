@@ -1,6 +1,6 @@
 package com.yupi.yu_picture_backend.model.dto.user;
 
-import com.yupi.yu_picture_backend.Common.PageRequest;
+import com.yupi.yu_picture_backend.common.PageRequest;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 

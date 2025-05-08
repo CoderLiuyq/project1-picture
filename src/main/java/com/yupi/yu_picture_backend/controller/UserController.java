@@ -1,9 +1,9 @@
 package com.yupi.yu_picture_backend.controller;
 
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.yupi.yu_picture_backend.Common.BaseResponse;
-import com.yupi.yu_picture_backend.Common.DeleteRequest;
-import com.yupi.yu_picture_backend.Common.ResultUtils;
+import com.yupi.yu_picture_backend.common.BaseResponse;
+import com.yupi.yu_picture_backend.common.DeleteRequest;
+import com.yupi.yu_picture_backend.common.ResultUtils;
 import com.yupi.yu_picture_backend.annotation.AuthCheck;
 import com.yupi.yu_picture_backend.constant.UserConstant;
 import com.yupi.yu_picture_backend.exception.BusinessException;

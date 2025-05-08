@@ -1,0 +1,33 @@
+#设置服务的访问端口
+server:
+  port: 8123
+#设置数据库相关设置
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/yu_pictrue
+    username: root
+    password: "011025"
+
+# 设置mybatis-plus相关设置
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: false  #关闭下划线转驼峰自动映射
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl  #开启日志输出
+  global-config:
+    db-config:
+      logic-delete-field: isDelete
+      logic-delete-value: 1 # 删除
+      logic-not-delete-value: 0 # 未删除时的值
+
+# 接口文档配置
+knife4j:
+  enable: true
+  openapi:
+    title: "接口文档"
+    version: 1.0
+    group:
+      default:
+        api-rule: package
+        api-rule-resources:
+          - com.yupi.yu_picture_backend.controller
